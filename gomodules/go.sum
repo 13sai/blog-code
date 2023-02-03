@@ -1,0 +1,4 @@
+github.com/13sai/gohelper v0.0.1 h1:VX2f99ZNsBNisF8wbu1i3bEdMG+YbMUtLj9WCRtbtKg=
+github.com/13sai/gohelper v0.0.1/go.mod h1:v6hzfqaFaCPIZtmma7jANfbrH8OMjorjHmdG+O1NJT0=
+github.com/rs/xid v1.2.1 h1:mhH9Nq+C1fY2l1XIpgxIiUOfNpRBYH1kKcr+qfKgjRc=
+github.com/rs/xid v1.2.1/go.mod h1:+uKXf+4Djp6Md1KODXJxgGQPKngRmWyn10oCKFzNHOQ=
