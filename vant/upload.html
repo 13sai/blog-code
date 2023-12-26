@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- 引入样式文件 -->
+    <link
+    rel="stylesheet"
+    href="https://fastly.jsdelivr.net/npm/vant@4/lib/index.css"
+    />
+
+<body>
+<div id="app">
+    <van-cell-group inset>
+        <van-field name="uploader" label="">
+          <template #input>
+            <van-uploader v-model="images" multiple 
+            :max-count="9"
+            :disabled="canUpload"
+            :before-read="beforeRead"
+            :after-read="afterRead"
+            upload-icon="plus"
+            @delete="onDelete"
+            />
+          </template>
+        </van-field>
+      </van-cell-group>
+</div>
+
+</body>
+<!-- 引入 Vue 和 Vant 的 JS 文件 -->
+<script src="https://fastly.jsdelivr.net/npm/vue@3"></script>
+<script src="https://fastly.jsdelivr.net/npm/vant@4/lib/vant.min.js"></script>
+
+<script>
+// 在 #app 标签下渲染一个按钮组件
+const app = Vue.createApp({});
+app.use(vant);
+app.mount('#app');
+</script>
+</html>
